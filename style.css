@@ -1,0 +1,433 @@
+
+
+body{
+    overflow-x: hidden;
+}
+/*hero section*/
+#hero{
+position: relative;
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+#hero::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url(./restaurant\ image.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+#hero-content{
+    position: absolute;
+}
+#hero-content h1{
+    color: navy;
+    font-size: 2.8rem;
+}
+#hero-content h2{
+    color: navy;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+#hero-content a{
+    color: white;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid orange;
+    background: rgb(0, 0 ,0.6 );
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+}
+#hero-content a:hover{
+background: navy;
+}
+/* header section*/
+#header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+}
+#navbar{
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(0, 0 ,0.5 );
+}
+#navbar h1{
+    color: white;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px #000;
+    font-family: cursive;
+
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+    padding: 5px 15px 5px 15px;
+}
+#navbar ul li :hover, #phone a:hover, #mobile-menu ul li :hover{
+    background: navy;
+    cursor: pointer;
+
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+#phone a{
+    text-decoration: none;
+    
+    color: white;
+    font-size: 1.1rem;
+    padding: 3px 15px 3px 15px;
+    border: 1px solid orange;
+}
+#mobile-menu{
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: palevioletred;
+}
+#mobile-menu ul{
+    display: flex;
+    justify-content: center;
+}
+#mobile-menu ul li{
+    list-style: none;
+    padding: 0 5px 0 5px;
+}
+#mobile-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* Mobile devices (up to 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+      padding: auto;
+    }
+    
+    .container {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+  } 
+@media screen and (max-width:768px){
+    #header{
+        position: absolute;
+    }
+    #mobile-menu{
+        display: block;
+    }
+    #navbar ul{
+        display: none;
+    }
+
+html{
+    font-size: 95%;
+}
+#menu-row{
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+}
+}
+@media screen and (max-width : 360px){
+    html{
+        font-size: 70%;
+    }
+}
+/* menu section*/
+#menu{
+    padding: 25px 0 25px 0;
+}
+#section{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana;
+}
+#menu-row{
+    display: flex;
+    padding: 0 100px 0 100px;
+}
+#menu-col{
+    box-shadow: 2px 2px 2px gray;
+    border: 1px solid gray;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+}
+#menu-col h2{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+}
+#image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid orange;
+}
+#image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+/*Chef section*/
+#chef{
+    padding: 25px 0 25px 0;
+}
+#chef-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.chef-col{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+#img{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+}
+#img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* About section*/
+#about{
+    padding: 25px 0 25px 0;
+}
+#about-row{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    flex-wrap:wrap;
+    padding: 0 100px 0 100px;
+}
+.about-col{
+    flex: auto;
+}
+#about-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+#about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    object-fit:fill;
+}
+.about-col h1{
+text-align:center;
+font-family:cursive;
+}
+.about-col p{
+    text-align:center;
+    font-weight:bold;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        .body {
+          width: 100%;
+          padding: 10px;
+          
+        }
+      }
+      /* contact section*/
+      
+      #contact{
+        padding: 25px 0 25px 0;
+      }
+      #contact-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 100px 0 100px;
+        flex-wrap: wrap;
+      }
+      .contact-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: auto;
+      }
+      .contact-col p,h3{
+        font-weight: bold;
+        color: blue;
+margin: 10px;
+      }
+      .contact-col p a{
+        text-decoration: none;
+        color: blue;
+      }
+      .contact-col form{
+        display: flex;
+        flex-direction: column;
+        background-color: brown;
+        width: 70%;
+        padding: 20px 40px 20px 20px;
+      }
+      .contact-col form h2{
+        text-align: center;
+        font-family: cursive;
+      }
+      .contact-col form input{
+        width: 100%;
+        height: 17pt;
+        padding: 5px;
+        margin: 5px;
+      }
+      .contact-col form textarea{
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+      }
+.contact-col form button{
+    margin: auto;
+    padding: 10px;
+    color: white;
+    background-color: orange;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+/*footer section*/
+#footer{
+    background-color: blueviolet;
+    padding: 10px;
+    position: relative;
+}
+#footer h5{
+    text-align: center;
+    color: white;
+}
+@media only screen and (max-width: 768px){
+#footer h5 a{
+    color: white;
+    text-decoration: none;
+}
+#top{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color: white;
+    font-size: 1rem;
+}}
+/*'''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
+@media only screen and (max-width: 768px) {
+    #hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    #hero-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    #hero-content a {
+      font-size: 1rem;
+      padding: 5px 15px;
+    }
+  }
+/*;;;;;;;;;;;;;;*/
+@media only screen and (max-width: 768px) {
+    #navbar h1 {
+      font-size: 1.5rem;
+    }
+  
+    #navbar ul {
+      display: none;
+    }
+  
+    #mobile-menu {
+      display: block;
+    }
+  }
+/*,,,,,,,,,,,,,,,,,,*/
+@media only screen and (max-width: 768px) {
+    #menu-row {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    #menu-col {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  /*&&&&&&&&&&&&&&&&&&&*/
+  @media only screen and (max-width: 768px) {
+    #about-row {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  
+    #about-img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    #chef-row {
+      flex-direction: column;
+    }
+  
+    .chef-col {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    #img {
+      width: 150px;
+      height: 200px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .contact-col form {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .contact-col form input,
+    .contact-col form textarea {
+      width: 75%;
+      padding: 10px;
+    }
+  }
+      
